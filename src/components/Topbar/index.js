@@ -1,32 +1,29 @@
-import Logo from '../../assets/Images/logo-d.png'
+import './index.scss'
 import { Link, NavLink } from 'react-router-dom'
-import  './index.scss' 
+import logo from '../../assets/Images/logo-d.png'
 
 const Topbar = () => (
-    <div classname = 'nav-bar'>
-
-        <Link className='Logo' to ='/'> 
-            <img src= {Logo} alt ="Logo" /> 
+    <div className='nav-bar'>
+        <Link className ='logo' to ='/'>
+            <img src={logo} alt="logo"/> 
         </Link>
 
-        <div className='choices'> 
-            <NavLink exact='true' activeclassname='active' to='/'>
-                <div classname='option'> we out here</div>
+        <nav>
+            <NavLink exact ="true" activeclassname="active" to="/" style={{textDecoration:"none"}}>
+                <div>homepage </div>
             </NavLink>
-            <NavLink exact='true' activeclassname='active' to='/'>
-                <div classname='option'> we out here</div>
+            <NavLink exact ="true" activeclassname="active" className="about-link" to="/about" style={{textDecoration:"none"}}>
+                <div>about </div>
             </NavLink>
-            <NavLink exact='true' activeclassname='active' to='/'>
-                <div classname='option'> we out here</div>
+            <NavLink exact ="true" activeclassname="active" className="shop-link" to="/shop" style={{textDecoration:"none"}}>
+                <div>shop </div>
             </NavLink>
-            <NavLink exact='true' activeclassname='active' to='/'>
-                <div classname='option'> we out here</div>
+            <NavLink exact ="true" activeclassname="active" classname="carbon-footprint" to="/carbon" style={{textDecoration:"none"}}>
+                <div>carbon </div>
             </NavLink>
-
-        </div>
-        
-
+        </nav>
     </div>
+
 )
 
-export default Topbar
+export default Topbar 
