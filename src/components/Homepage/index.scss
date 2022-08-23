@@ -1,3 +1,103 @@
-.Home {
-    background-color: blue($color: #000000);
+.page {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 77px;
+    background-color: lightgrey;
+
+    .splitleft{
+        height: 850px;
+        width: 50%;
+        float: left;
+        position: relative;
+
+        p {
+            color: black;
+            position: relative;
+            top: 250px;
+            right: 80px;
+        }
+        text {
+            font-weight: 700;
+            font-size: 80px;
+            position: relative;
+            top: 250px;
+            left: 150px;
+            text-align: left;
+            overflow: auto;
+            
+
+        }
+        text2 {
+            font-weight: 700;
+            font-size: 80px;
+            position: relative;
+            top: 320px;
+            right: 70px;
+            text-align: left;
+            overflow: auto;
+            
+
+        }
+        p3 {
+            color: black;
+            font: 100;
+            left: 260px;
+            font-family: 'Times New Roman', Times, serif;
+            position: absolute;
+            top: 490px;
+            right: 250px;
+            
+        }
+
+        div2 {
+            top: 550px;
+            left: 350px;
+            position: absolute;
+            font-weight: 400;
+            letter-spacing: 4px;
+            text-decoration: none;
+            border: 1px solid black;
+            padding: 10px 10px;
+            border-radius: 30px;
+            color: black;
+            animation: fadeIn 1s 1.8s backwards;
+            white-space: nowrap;
+
+            &:hover{
+                background: black;
+                color: white;
+            }
+
+        }
+
+    }
+    .splitright{
+        height: 850px;
+        width: 50%;
+        float: right;
+        position: relative;
+
+        img{
+            width: 850px;
+            height: 850px;
+        }
+
+    }
+
+}
+.stage2{
+    display: block;
+    position: absolute;
+    background-color: white;
+    top: 850px;
+    height: 10%;
+    width: 100%;
+    align-items: center;
+    padding: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    overflow: wrap;
+
+
 }
