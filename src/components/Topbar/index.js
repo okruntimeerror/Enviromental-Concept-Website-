@@ -7,7 +7,8 @@ const Topbar = () => (
         <Link className ='logo' to ='/'>
             <img src={logo} alt="logo"/> 
         </Link>
-
+/*this is probably going to be pasted on the top of every separate file instead of importing it
+straight to app*/
         <nav>
             <NavLink exact ="true" activeclassname="active" to="/" style={{textDecoration:"none"}}>
                 <div>homepage </div>
