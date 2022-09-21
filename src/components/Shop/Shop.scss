@@ -61,3 +61,8 @@
         float: right; 
         text-align: center;
         opacity: 0.6;
+         
+         &:hover{
+            opacity: 1;
+            transition: 0.7s;
+        }
