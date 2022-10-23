@@ -1,11 +1,10 @@
 import "./index.scss"; 
 import Topbar from '../Topbar'; 
-import fillerbanner from '../../assets/Images/fillerbanner.jpg';
-import BasicSelect from "../dropdown";
-import BasicSelect2 from "../dropdown/index2";
-import BasicSelect3 from "../dropdown/index3";
-import BasicSelect4 from "../dropdown/index4";
-import BasicSelect5 from "../dropdown/index5";
+import fillerbanner from '../../assets/Images/splashedited.PNG';
+import {BasicSelect, BasicSelect2, BasicSelect3, BasicSelect5} from "../dropdown/searchbar/index";
+import BasicSelect4 from "../dropdown/searchbar/material";
+import  CustomerType  from "../dropdown/profile/index.js";
+import ActionAreaCard1, { ActionAreaCard2, ActionAreaCard3 } from "../cards";
 
 
 
@@ -18,8 +17,8 @@ const Example = () => {
         <div className="app">
             <Topbar/>
         
-            <div className="topbanner">
-                <img src={fillerbanner} alt = "Topbanner"/> 
+            <div className="Topbanner">
+                <img src={fillerbanner} alt = "splashpage"/> 
             </div>
 
             <div className="searchbar">
@@ -54,10 +53,38 @@ const Example = () => {
                 </div>
 
                 <BasicSelect5/> 
-                    
+                
+                <button className="button">
+                    Search
+                </button>
                 
                 
             </div>
+            
+            <div className="makeprofile">
+                <CustomerType/>
+
+                <div className="products">
+
+                    <ActionAreaCard1/> 
+                    <ActionAreaCard2/>
+                    <ActionAreaCard3/>
+                    
+                </div>
+            </div>
+
+            <div className="download">
+                download the app that doesnt exist yet section
+            </div>
+
+            <div className="family">
+                how many users are here section
+            </div>
+
+            <div className="new_products">
+                new product cards probably gonna use cards to describe them
+            </div>
+
         </div>
     )
 }
