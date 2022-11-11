@@ -1,0 +1,54 @@
+.nav-bar {
+    background: whitesmoke;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    min-height: 0px;
+    
+    .logo {
+        display: block;
+        padding: 4px 0;
+
+
+        img {
+            display: block;
+            align-items: center;
+            justify-content: center;
+            margin: auto auto;
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    nav {
+        margin-top: -30px;
+        margin-bottom: 20px;
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        padding: 0px 200px;
+        position: flex;
+        width: auto;
+        text-decoration: none;
+       
+        div {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: black;
+            padding: 10px 20px;
+            border: 1px solid gray;
+            border-radius: 30px;
+            
+            &:hover{
+                background: black;
+                color: white;
+            }
+
+        }
+    }
+    
+}
+
